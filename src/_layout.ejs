@@ -122,9 +122,36 @@
       </div>
     </header>
     <main class="flex p:pr-[26px]">
-      <nav class="w-[295px] flex-shrink-0">
+      <nav class="w-[80px] overflow-hidden flex-shrink-0">
         <ul>
-          <li></li>
+          <li>
+            <a href="javascript:;" class="flex items-center px-[26px] py-[15px]">
+              <i class="
+                relative 
+                p:before:absolute p:before:bg-[#d8dde8] p:before:rounded-[10px] p:before:w-[40px] p:before:h-[40px] p:before:-translate-x-1/2 p:before:-translate-y-1/2 p:before:top-1/2 p:before:left-1/2
+              ">
+                <%- require('svg.ejs')({
+                  name: 'home',
+                  className:'relative z-1 w-[18px] h-[20px]'
+                })%>
+              </i>
+              <p class="flex-shrink-0 ml-[10px]">Marketing &  Sales</p>
+            </a>
+            <ul>
+              <li>
+                <a href="/" class="flex items-center pl-[55px] py-[10px]">
+                  <p>Option_1</p>
+                </a>
+                <ul>
+                  <li>
+                    <a href="/" class="flex items-center pl-[80px] py-[10px]">
+                      <p>Suboption_1</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="flex-grow pt-[50px]">
