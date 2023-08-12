@@ -2,7 +2,7 @@
   <div>
     <p class="text-[#737791] text-[14px] leading-[21px] mb-[5px]">Category</p>
     <div class="relative h-[48px] w-[222px]">
-      <select name="Announcement" class="w-full h-full overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px]  appearance-none text-[#737791] py-[2px] px-[16px] text-[18px]">
+      <select name="Announcement" class="block w-full h-full overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px]  appearance-none text-[#737791] py-[2px] px-[16px] text-[18px]">
         <option value="HR Announcemen">HR Announcement</option> 
         <option value="News">News</option> 
         <option value="HR Announcemen">All</option> 
@@ -17,29 +17,47 @@
   </div>
   <div>
     <p class="text-[#737791] font-poppins text-[14px] font-[400] leading-[21px] mb-[5px]">Subtitle</p>
-    <input type="text" class="overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px] px-[15px] h-[48px] w-[218px]">
+    <input type="text" class="block overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px] px-[15px] h-[48px] w-[218px]">
   </div>
-  <button type="submit" class="flex items-center justify-center bg-[#F2F2F7] rounded-[8px] px-[15px] py-[10px]">
+  <button type="submit" class="flex items-center justify-center bg-[#F2F2F7] rounded-[8px] px-[15px] h-[48px]">
     <p>Search</p>
   </button>
 </form>
 <section class="pt-[30px] space-y-[15px]">
-  <header class="flex items-center]">
+  <header class="flex items-center">
     <p class="flex-grow text-[#11263C] font-[600] text-[16px]">My Collection</p>
-    <div class="flex">
+    <div class="flex items-center">
       <p class="text-[#737791] font-[600] text-[16px]">Total 480 |</p>
-      <div class="relative h-[48px] w-[222px]">
-        <select name="Announcement" class="w-full h-full overflow-hidden border-solid border-[1px] border-[#F2F2F7] rounded-[8px]  appearance-none text-[#737791] py-[2px] px-[16px] text-[18px]">
-          <option value="HR Announcemen">HR Announcement</option> 
-          <option value="News">News</option> 
-          <option value="HR Announcemen">All</option> 
-        </select>
-        <i class="absolute transform -translate-y-1/2 top-1/2 flex-shrink-0 right-[15px] ml-[5px]">
-          <%- require('svg.ejs')({
-            name: 'arrow',
-            className:'w-[10px] h-[5px]'
-          })%>
-        </i>
+      <div class="flex items-center space-x-[20px] ml-[26px]">
+        <button type="button" class="rotate-90">
+          <i class="block">
+            <%- require('svg.ejs')({
+              name: 'arrow',
+              className:'w-[10px] h-[5px]'
+            })%>
+          </i>
+        </button>
+        <div class="relative h-[32px] w-[40px]">
+          <select name="Announcement" class="block w-full h-full overflow-hidden rounded-[5px] appearance-none text-[#737791] px-[10px] text-[14px]">
+            <option value="1">1</option> 
+            <option value="10">10</option> 
+            <option value="15">15</option> 
+          </select>
+          <i class="absolute transform -translate-y-1/2 top-1/2 flex-shrink-0 right-[5px] ml-[5px]">
+            <%- require('svg.ejs')({
+              name: 'arrow',
+              className:'w-[10px] h-[5px]'
+            })%>
+          </i>
+        </div>
+        <button type="button" class="rotate-[270deg]">
+          <i class="block">
+            <%- require('svg.ejs')({
+              name: 'arrow',
+              className:'w-[10px] h-[5px]'
+            })%>
+          </i>
+        </button>
       </div>
     </div>
   </header>
