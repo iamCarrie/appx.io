@@ -18,13 +18,13 @@
     
 </head>
 <body>
-  <div class="lBd overflow-hidden max-w-[1460px] m-auto">
+  <div id="app" class="lBd overflow-hidden max-w-[1460px] m-auto">
     <header class="flex items-center py-[28px] px-[25px]">
       <div class="flex items-center pr-[52px]">
         <button 
           type="button" 
           class="
-            m-nav-btn jMbtn
+            m-nav-btn j-menu-btn
             flex-shrink-0 relative w-[20px] h-[16px] mr-[35px]
           "
         >
@@ -122,7 +122,8 @@
       </div>
     </header>
     <main class="flex p:pr-[26px]">
-      <nav class="w-[80px] overflow-hidden flex-shrink-0">
+      {{count}}
+      <nav class="w-[80px] overflow-hidden flex-shrink-0 j-menu-content menu-active:w-[260px]">
         <ul>
           <li>
             <a href="javascript:;" class="flex items-center px-[26px] py-[15px]">
