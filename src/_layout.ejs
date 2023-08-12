@@ -39,7 +39,7 @@
       </div>
       <div class="flex items-center space-x-[8px]">
         <div class="relative h-[48px] w-[245px]">
-          <input type="text" class="w-full h-full border-[#737791] border-solid border-[1px] rounded-[8px] py-[2px] pr-[32px] pl-[24px] text-[18px]" placeholder="Serch here...">
+          <input type="text" class="w-full h-full border-[#737791] border-solid border-[1px] rounded-[8px] py-[2px] pr-[32px] pl-[24px]" placeholder="Serch here...">
           <i class="flex items-center text-[#000] absolute cursor-pointer border-solid border-[#000] border-l-[1px] my-[10px] pl-[10px] pr-[15px] py-[5px] top-0 right-0 ">
             <%- require('svg.ejs')({
               name: 'serch',
@@ -48,7 +48,7 @@
           </i>
         </div>
         <div class="relative overflow-hidden h-[48px] w-[100px]">
-          <select name="" id="" class="w-full h-full appearance-none border-[#737791] text-[#737791] border-solid border-[1px] rounded-[8px] py-[2px] px-[16px] text-[18px]">
+          <select name="" id="" class="w-full h-full appearance-none border-[#737791] text-[#737791] border-solid border-[1px] rounded-[8px] py-[2px] px-[16px]">
             <option value="By All">By All</option>
             <option value="By Station">By Station</option>
             <option value="By Country">By Country</option>
@@ -70,10 +70,10 @@
                 className:'w-[20px] h-[20px]'
               })%>
             </i>
-            <p class="font-bold ml-[12px] text-[18px]">09:54 am</p>
+            <p class="font-bold ml-[12px]">09:54 am</p>
           </div>
-          <div class="relative overflow-hidden h-[48px] w-[140px]">
-            <select name="" id="" class="w-full h-full appearance-none text-[#737791] py-[2px] px-[16px] text-[18px]">
+          <div class="relative overflow-hidden h-[48px] w-[170px]">
+            <select name="" id="" class="w-full h-full appearance-none bg-[#f2f2f7] text-[#737791] py-[2px] px-[16px]">
               <option value="Antananarivo">Antananarivo</option> 
               <option value="Hongkong">Hongkong</option>
               <option value="Taipei">Taipei</option>
@@ -127,8 +127,8 @@
           <li></li>
         </ul>
       </nav>
-      <div class="pt-[50px]">
-        <ul class="flex texd-[14px] mb-[25px]">
+      <div class="flex-grow pt-[50px]">
+        <ul class="flex font-[500] text-[14px] mb-[25px]">
           <li>
             <p class="text-[#737791] after:content-['>'] after:mx-[15px]">Home</p>
           </li>
@@ -136,9 +136,7 @@
             <a href="#" class="font-bold text-[#121212]">My Collection</a>
           </li>
         </ul>
-        <div class="m-content">
-          <%- reqFile %>
-        </div>
+        <%- reqFile %>
       </div>
     </main>
   </div>

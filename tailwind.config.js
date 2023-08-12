@@ -17,6 +17,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
+      },
+      fontFamily:{
+        'poppins':'Poppins,sans-serif'
       }
 
     },
