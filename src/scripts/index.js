@@ -19,6 +19,7 @@ requireAll(req);
 createApp({
   // exposed to all expressions
   isNav: false,
+  subNav: '',
   count: 0,
   // getters
   get plusOne() {
